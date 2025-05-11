@@ -19,3 +19,29 @@ cards.forEach(card => {
     card.style.boxShadow = '';
   });
 });
+
+// Redirect Functionality
+function redirectTo(page) {
+    const urls = {
+        // Service URLs
+        'company-registration': '/services/company-registration.html',
+        'domain-services': '/services/domain-services.html',
+        'web-development': '/services/web-development.html',
+        'smartphone-repairs': '/services/smartphone-repairs.html',
+        
+        // Investment URLs
+        'basic-investment': '/investments/basic-plan.html',
+        'growth-investment': '/investments/growth-plan.html',
+        'premium-investment': '/investments/premium-plan.html',
+        
+        // Legal URLs
+        'privacy-policy': 'https://g-kroon.github.io/GKroon/privacy-policy.html',
+        'terms-conditions': 'https://g-kroon.github.io/GKroon/terms-conditions.html',
+        'refund-policy': 'https://g-kroon.github.io/GKroon/refund-policy.html',
+        'disclaimer': 'https://g-kroon.github.io/GKroon/disclaimer.html'
+    };
+
+    if (urls[page]) {
+        window.location.href = urls[page];
+    }
+}

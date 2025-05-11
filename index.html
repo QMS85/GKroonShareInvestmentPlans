@@ -6,16 +6,18 @@
   <title>GKroon (Pty) Ltd</title>
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
   <header class="header">
     <div class="container">
       <h1 class="logo">GKroon (Pty) Ltd</h1>
+      <h3 class="logo">Share Investment Plans</h3>
       <nav class="navbar">
         <ul>
           <li><a href="#services">Services</a></li>
           <li><a href="#investment">Investment Plans</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact-section">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -36,21 +38,75 @@
         <div class="card">
           <h3>Company Registrations</h3>
           <p>Quick and hassle-free company registration services.</p>
+          <button class="btn redirect-btn" onclick="redirectTo('company-registration')">Learn More</button>
         </div>
         <div class="card">
           <h3>Domain Registrations & Transfers</h3>
           <p>Secure your domain with our reliable services.</p>
+          <button class="btn redirect-btn" onclick="redirectTo('domain-services')">Learn More</button>
         </div>
         <div class="card">
           <h3>Web Design & Development</h3>
           <p>Custom websites tailored to your business needs.</p>
+          <button class="btn redirect-btn" onclick="redirectTo('web-development')">Learn More</button>
         </div>
         <div class="card">
           <h3>Smartphone Repairs</h3>
           <p>Affordable and efficient smartphone repair services.</p>
+          <button class="btn redirect-btn" onclick="redirectTo('smartphone-repairs')">Learn More</button>
         </div>
       </div>
     </section>
+
+    <!-- Share Information Section -->
+    <section id="share-info" class="share-info">
+      <h2>Share Ownership Information</h2>
+      <div class="share-details">
+        <div class="share-type">
+          <h3>Ordinary Shares</h3>
+          <ul>
+            <li>Voting rights at shareholder meetings</li>
+            <li>Right to dividends when declared</li>
+            <li>Claim on company assets</li>
+            <li>Transfer rights subject to MOI</li>
+          </ul>
+        </div>
+        <div class="share-type">
+          <h3>Preference Shares</h3>
+          <ul>
+            <li>Fixed dividend priority</li>
+            <li>Limited voting rights</li>
+            <li>Preferential claim on assets</li>
+            <li>Cumulative dividend rights</li>
+          </ul>
+        </div>
+        <div class="legal-requirements">
+          <h3>Share Issue Requirements</h3>
+          <ul>
+            <li>CIPC registration required</li>
+            <li>Share certificate issuance</li>
+            <li>Shareholders agreement</li>
+            <li>Securities register maintenance</li>
+            <li>Compliance with Companies Act</li>
+          </ul>
+        </div>
+        <div class="share-structure">
+          <h3>GKroon Share Structure</h3>
+          <ul>
+            <li>Total Capital Goal: R5,000,000</li>
+            <li>Number of Shares: 150</li>
+            <li>Share Categories:</li>
+            <ul>
+              <li>Basic: R150/share (12 months)</li>
+              <li>Growth: R750/share (24 months)</li>
+              <li>Premium: R1,250/share (36 months)</li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    
 
     <!-- Investment Section -->
     <section id="investment" class="investment">
@@ -59,27 +115,49 @@
         <div class="plan">
           <h3>Basic Investor</h3>
           <p>R150 per share for a 12-month term.</p>
+          <button class="btn redirect-btn" onclick="redirectTo('basic-investment')">Invest Now</button>
         </div>
         <div class="plan">
           <h3>Growth Investor</h3>
           <p>R750 per share for a 24-month term.</p>
+          <button class="btn redirect-btn" onclick="redirectTo('growth-investment')">Invest Now</button>
         </div>
         <div class="plan">
           <h3>Premium Investor</h3>
           <p>R1,250 per share for a 36-month term.</p>
+          <button class="btn redirect-btn" onclick="redirectTo('premium-investment')">Invest Now</button>
         </div>
       </div>
     </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-      <h2>Contact Us</h2>
-      <p>Email: <a href="mailto:info.gkroon@gmail.com">info.gkroon@gmail.com</a></p>
-    </section>
+    
   </main>
 
-  <footer>
-    <p>© 2025 GKroon (Pty) Ltd. All rights reserved.</p>
+  <footer class="footer" id="contact-section">
+    <div class="footer-content">
+      <div class="footer-section contact-info">
+        <h4>Contact Us</h4>
+        <p><i class="fas fa-phone"></i> +27 78 880 7566</p>
+        <p><i class="fas fa-phone"></i> +27 66 119 9255</p>
+        <p class="gradient-email"><i class="fas fa-envelope"></i><a href="mailto:info.gkroon@gmail.com">info.gkroon@gmail.com</a></p>
+      </div>
+      
+      <div class="footer-section social-links">
+        <h4>Follow Us</h4>
+        <a href="https://www.facebook.com/GKroonPtyLtd" class="social-icon"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-text">© 2025 <a href="https://g-kroon.github.io/GKroon/">GKroon (Pty) Ltd.</a> All rights reserved.</p>
+      <div class="legal-links">
+        <a href="#" onclick="redirectTo('privacy-policy')">Privacy Policy</a>
+        <a href="#" onclick="redirectTo('terms-conditions')">Terms & Conditions</a>
+        <a href="#" onclick="redirectTo('refund-policy')">Refund Policy</a>
+        <a href="#" onclick="redirectTo('disclaimer')">Disclaimer</a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
