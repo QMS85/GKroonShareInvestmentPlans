@@ -1,0 +1,11 @@
+project/
+│
+├── index.html            # Main HTML file
+├── styles/
+│   └── style.css         # CSS styles
+├── scripts/
+│   └── script.js         # JavaScript for animations/effects
+├── assets/
+│   ├── images/           # Image assets
+│   └── fonts/            # Custom fonts
+└── README.md             # Documentation
